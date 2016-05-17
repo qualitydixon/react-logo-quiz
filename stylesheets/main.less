@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+@cardBackground: #ECEFF1;
+@background: #424242;
+
+body {
+  background: @background;
+  font-family: Roboto;
+}
+
+.navContainer {
+  color: @cardBackground;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navContainer ul {
+  display: flex;
+  margin: 5px;
+  padding: 0;
+}
+
+.navContainer li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.icon {
+  font-size: 36px;
+}
+
+a:link, a:visited, a:active {
+  color: @cardBackground;
+  text-decoration: none;
+}
+
+.title {
+  margin-left: 10px;
+}
+.libList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 70vh;
+}
+
+li {
+  margin: 3px;
+}
+
+.libCard {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  width: 15vw;
+  min-width: 200px;
+  height: 8vh;
+  max-height: 100px;
+  min-height: 55px;
+  text-align: center;
+  color: @background;
+  background: @cardBackground;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.logoCard {
+  background: @cardBackground;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  width: 170px;
+  height: 170px;
+}
+
+.miniLogoCard {
+  border-radius: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 10px;
+  width: 50%;
+}
+
+.quizContainer {
+  display: flex;
+}
+
+.libName {
+  margin: 10px;
+}
+
+.logoPlaceholder {
+  width: 70px;
+  height: 70px;
+  background: @background;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.submit {
+  width: 200px;
+  height: 70px;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: center;
+}
+
+.score {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.test {
+  animation: spin 8s linear infinite;
+}
+
+.rotate {
+    -webkit-animation:spin 8s linear infinite;
+    -moz-animation:spin 8s linear infinite;
+    animation:spin 8s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } } /* Chrome, Safari, Opera */
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
