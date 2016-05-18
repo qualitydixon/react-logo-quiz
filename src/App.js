@@ -109,6 +109,9 @@ class App extends Component {
           <div className='modalContainer'>
             <h2>{'Thanks for playing!'}</h2>
             <span className='scoreText'>{'You got '}<span className='score'>{`${this.state.score}/${Libs.length}`}</span>{' answers correct.'}</span>
+            <button className='btn twitterButton'>
+              {'Tweet'}
+            </button>
           </div>
         </Modal>
       </div>
