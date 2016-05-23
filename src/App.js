@@ -5,7 +5,7 @@ import Navigation from './Navigation'
 import Modal from 'react-modal'
 import { DragDropContext } from 'react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
-import { Libs, Logos } from './Constants/Constants'
+import { Libs, Logos, shareURL } from './Constants/Constants'
 import { libState, checkVictory } from './utils/helpers'
 import update from 'react/lib/update'
 require('../stylesheets/main.less')
@@ -109,9 +109,9 @@ class App extends Component {
           <div className='modalContainer'>
             <h2>{'Thanks for playing!'}</h2>
             <span className='scoreText'>{'You got '}<span className='score'>{`${this.state.score}/${Libs.length}`}</span>{' answers correct.'}</span>
-            <button className='btn twitterButton'>
+            <a href={shareURL} target='_blank'><button className='btn twitterButton'>
               {'Tweet'}
-            </button>
+            </button></a>
           </div>
         </Modal>
       </div>

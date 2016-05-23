@@ -30,3 +30,5 @@ const Names = [
 ]
 export const Libs = shuffle(shuffle(Names))
 export const Logos = shuffle(Names)
+
+export const shareURL = 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.google.com&text=This%20is%20awesome%21%2F&original_referer='
