@@ -33,3 +33,8 @@ export function shuffle (arr) {
   }
   return newArr
 }
+
+export function shareURL (score) {
+  const text = encodeURI(`I got a ${score} on the React Logo Quiz!`)
+  return `https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.google.com&text=${text}&original_referer=`
+}
