@@ -5,7 +5,7 @@ export const ItemTypes = {
 }
 
 export const path = '../../res/logos/'
-/*
+
 const Names = [
   'React',
   'Flux',
@@ -21,12 +21,13 @@ const Names = [
   'Flow',
   'Karma'
 ]
-*/
+/*
 const Names = [
   'React',
   'Flux',
   'Redux',
   'Nuclide'
 ]
+*/
 export const Libs = shuffle(shuffle(Names))
 export const Logos = shuffle(Names)

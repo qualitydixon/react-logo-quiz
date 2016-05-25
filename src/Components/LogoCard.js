@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
-import { ItemTypes } from './Constants/Constants'
+import { ItemTypes } from '../utils/Constants'
 import { DragSource } from 'react-dnd'
-import { makePath } from './utils/helpers'
+import { makePath } from '../utils/helpers'
 
 const logoCardSource = {
   beginDrag (props) {

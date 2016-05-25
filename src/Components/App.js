@@ -5,10 +5,10 @@ import Navigation from './Navigation'
 import Modal from 'react-modal'
 import { DragDropContext } from 'react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
-import { Libs, Logos } from './Constants/Constants'
-import { libState, checkVictory, shareURL } from './utils/helpers'
+import { Libs, Logos } from '../utils/Constants'
+import { libState, checkVictory, shareURL } from '../utils/helpers'
 import update from 'react/lib/update'
-require('../stylesheets/main.less')
+require('../../stylesheets/main.less')
 
 const customStyles = {
   content: {

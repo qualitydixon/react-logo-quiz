@@ -7,7 +7,7 @@ LIVE DEMO
 - Add live demo.
 - Add screenshots.
 - Fix Jest & Karma SVG.
-- Add share to twitter button.
+- ~~Add share to twitter button.~~
 - Reset game state on Modal Close.
 
 ### Dependencies

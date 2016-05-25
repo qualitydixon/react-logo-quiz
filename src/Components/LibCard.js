@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
-import { ItemTypes } from './Constants/Constants'
+import { ItemTypes } from '../utils/Constants'
 import { DropTarget } from 'react-dnd'
-import { makePath } from './utils/helpers'
+import { makePath } from '../utils/helpers'
 
 const libCardTarget = {
   canDrop (props) {

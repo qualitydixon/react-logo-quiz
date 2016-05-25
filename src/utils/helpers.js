@@ -1,4 +1,4 @@
-import { path, Libs } from '../Constants/Constants'
+import { path, Libs } from './Constants'
 
 export function libState () {
   let arr = []
