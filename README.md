@@ -8,7 +8,8 @@ LIVE DEMO
 - Add screenshots.
 - Fix Jest & Karma SVG.
 - ~~Add share to twitter button.~~
-- Reset game state on Modal Close.
+- Add tooltip to each logo card that gives a description of the technology.
+- ~~Reset game state on Modal Close.~~
 
 ### Dependencies
 

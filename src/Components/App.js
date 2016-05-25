@@ -68,6 +68,9 @@ class App extends Component {
       },
       droppedLogos: {
         $set: []
+      },
+      libCards: {
+        $set: libState()
       }
     }))
   }

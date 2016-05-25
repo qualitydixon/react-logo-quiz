@@ -21,7 +21,7 @@
     "edit",
     "webpack"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "Mike Dixon <qualitydixon@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
