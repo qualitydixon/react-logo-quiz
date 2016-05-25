@@ -14,12 +14,10 @@ const Names = [
   'Webpack',
   'Relay',
   'ESLint',
-  'Jest',
   'Redux-Observable',
   'Babel',
   'GraphQL',
-  'Flow',
-  'Karma'
+  'Flow'
 ]
 /*
 const Names = [

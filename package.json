@@ -4,7 +4,9 @@
   "description": "Can you match the React-related technology with it's logo?",
   "scripts": {
     "start": "node server.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "prod": "webpack -p",
+    "postinstall": "webpack -p --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
