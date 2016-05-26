@@ -4,7 +4,7 @@ export default function Navigation () {
   return (
     <div className='navContainer'>
       <div className='title'>
-      <h2>{'React Logo Quiz'}</h2>
+      <h2>{'Reactiverse Logo Quiz'}</h2>
       <p>{'Match the logos to their corresponding library.'}</p>
       </div>
       <ul>

@@ -2,10 +2,11 @@
 
 @cardBackground: #ECEFF1;
 @background: #424242;
+@mainFont: Roboto;
 
 body {
   background: @background;
-  font-family: Roboto;
+  font-family: @mainFont;
 }
 
 .navContainer {
@@ -110,6 +111,28 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 28px;
+  font-family: @mainFont;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+}
+
+.modalLogo {
+  width: 150px;
+  height: 150px;
+  align-self: center;
+  .rotate;
+}
+
+.modalText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .submit {
@@ -121,13 +144,11 @@ li {
 }
 
 .twitterButton {
-  width: 150px;
-  height: 50px;
+  margin: 10px;
   font-size: 28px;
-  font-weight: bold;
   align-self: center;
   background: #1B9AE8;
-  border-radius: 10px;
+  border-radius: 7px;
   color: #FFFFFF;
 }
 

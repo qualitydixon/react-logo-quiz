@@ -5,7 +5,6 @@ export const ItemTypes = {
 }
 
 export const path = '../../res/logos/'
-
 const Names = [
   'React',
   'Flux',

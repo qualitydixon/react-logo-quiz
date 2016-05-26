@@ -8,8 +8,8 @@ import HTML5Backend from 'react-dnd-html5-backend'
 import { Libs, Logos } from '../utils/Constants'
 import { libState, checkVictory, shareURL } from '../utils/helpers'
 import update from 'react/lib/update'
+import ReactLogo from '../../res/logos/React.svg'
 require('../../stylesheets/main.less')
-require('../../res/logos/React.svg')
 
 const customStyles = {
   content: {
@@ -18,6 +18,11 @@ const customStyles = {
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
+    padding: '10px',
+    width: 500,
+    margin: '0px auto',
+    height: 300,
+    borderRadius: 5,
     transform: 'translate(-50%, -50%)'
   }
 }
@@ -111,11 +116,21 @@ class App extends Component {
           onRequestClose={() => this.closeModal()}
         >
           <div className='modalContainer'>
-            <h2>{'Thanks for playing!'}</h2>
-            <span className='scoreText'>{'You got '}<span className='score'>{`${this.state.score}/${Libs.length}`}</span>{' answers correct.'}</span>
-            <a href={shareURL(this.state.score)} target='_blank'><button className='btn twitterButton'>
-              {'Tweet'}
-            </button></a>
+            <div className='modalHeader'>
+              <img className='modalLogo' src={ReactLogo} />
+              <div className='modalText'>
+                <p>{'Thanks for playing!!'}</p>
+                <span className='scoreText'>{'Score: '}{`${this.state.score}/${Libs.length}`}</span>
+                {this.state.score === Libs.length && <div>{'Perfect Score!'}</div>}
+                <div>
+                  <a href={shareURL(this.state.score)} target='_blank'>
+                    <button className='btn twitterButton'>
+                      <i className='fa fa-twitter icon'></i>{' tweet'}
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </Modal>
       </div>
