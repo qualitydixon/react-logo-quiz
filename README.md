@@ -1,11 +1,13 @@
 # React Logo Quiz
 
+![screenshot]( )
+
 [LIVE DEMO](http://qualitydixon.github.io/react-logo-quiz/)
 
 ## Todo
 
 - ~~Add live demo.~~
-- Add screenshots.
+- ~Add screenshots.~
 - Fix Jest & Karma SVG.
 - ~~Add share to twitter button.~~
 - Add tooltip to each logo card that gives a description of the technology.
