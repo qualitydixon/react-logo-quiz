@@ -4,7 +4,7 @@
 
 ## Todo
 
-- Add live demo.
+- ~~Add live demo.~~
 - Add screenshots.
 - Fix Jest & Karma SVG.
 - ~~Add share to twitter button.~~
