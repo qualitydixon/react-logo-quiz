@@ -1,6 +1,6 @@
 # React Logo Quiz
 
-![screenshot]( )
+![screenshot](https://raw.githubusercontent.com/qualitydixon/react-logo-quiz/master/res/screenshots/react_quiz_screen_1.png)
 
 [LIVE DEMO](http://qualitydixon.github.io/react-logo-quiz/)
 
