@@ -9,6 +9,7 @@ import { Libs, Logos } from '../utils/Constants'
 import { libState, checkVictory, shareURL } from '../utils/helpers'
 import update from 'react/lib/update'
 require('../../stylesheets/main.less')
+require('../../res/logos/React.svg')
 
 const customStyles = {
   content: {

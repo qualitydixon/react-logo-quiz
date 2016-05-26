@@ -14,7 +14,7 @@ const Names = [
   'Webpack',
   'Relay',
   'ESLint',
-  'Redux-Observable',
+  'ReduxObservable',
   'Babel',
   'GraphQL',
   'Flow'

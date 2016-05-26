@@ -1,6 +1,6 @@
 # React Logo Quiz
 
-LIVE DEMO
+[LIVE DEMO](http://qualitydixon.github.io/react-logo-quiz/)
 
 ## Todo
 

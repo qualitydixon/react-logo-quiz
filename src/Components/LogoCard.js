@@ -2,6 +2,30 @@ import React, { Component, PropTypes } from 'react'
 import { ItemTypes } from '../utils/Constants'
 import { DragSource } from 'react-dnd'
 import { makePath } from '../utils/helpers'
+import ReactLogo from '../../res/logos/React.svg'
+import Babel from '../../res/logos/Babel.svg'
+import Flux from '../../res/logos/Flux.svg'
+import Redux from '../../res/logos/Redux.svg'
+import Nuclide from '../../res/logos/Nuclide.svg'
+import Webpack from '../../res/logos/Webpack.svg'
+import Relay from '../../res/logos/Relay.svg'
+import ESLint from '../../res/logos/ESLint.svg'
+import ReduxObservable from '../../res/logos/Redux-Observable.svg'
+import GraphQL from '../../res/logos/GraphQL.svg'
+import Flow from '../../res/logos/Flow.svg'
+const Logos = {
+  React: ReactLogo,
+  Babel: Babel,
+  Flux: Flux,
+  Redux: Redux,
+  Nuclide: Nuclide,
+  Webpack: Webpack,
+  Relay: Relay,
+  ESLint: ESLint,
+  ReduxObservable: ReduxObservable,
+  GraphQL: GraphQL,
+  Flow: Flow
+}
 
 const logoCardSource = {
   beginDrag (props) {
@@ -36,7 +60,7 @@ class LogoCard extends Component {
             cursor: 'move',
             textAlign: 'center'
           }}>
-            <img className='logoCard' src={makePath(logo)} />
+            <img className='logoCard' src={Logos[logo]} />
           </div>}
       </div>
     )
