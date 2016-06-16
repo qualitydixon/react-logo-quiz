@@ -42,12 +42,6 @@ function collect (connect, monitor) {
 }
 
 class LogoCard extends Component {
-  static propTypes = {
-    logo: PropTypes.string.isRequired,
-    connectDragSource: PropTypes.func.isRequired,
-    isDragging: PropTypes.bool.isRequired,
-    isDropped: PropTypes.bool.isRequired
-  }
   render () {
     const { connectDragSource, isDragging, isDropped, logo } = this.props
     return connectDragSource(
@@ -65,5 +59,12 @@ class LogoCard extends Component {
     )
   }
 }
+
+LogoCard.propTypes = {
+  logo: PropTypes.string.isRequired,
+  connectDragSource: PropTypes.func.isRequired,
+  isDragging: PropTypes.bool.isRequired,
+  isDropped: PropTypes.bool.isRequired
+  }
 
 export default DragSource(ItemTypes.LOGO, logoCardSource, collect)(LogoCard)

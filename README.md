@@ -13,6 +13,7 @@
 - Add tooltip to each logo card that gives a description of the technology.
 - ~~Reset game state on Modal Close.~~
 - Allow users to replace dropped logo with different one.
+- Maybe convert css to inline styles
 
 ### Dependencies
 
