@@ -1,5 +1,7 @@
 import { shuffle } from '../utils/helpers'
-
+/*
+  "What is a type, then? A type is a string (or a symbol) uniquely identifying a whole class of items in your application."
+*/
 export const ItemTypes = {
   LOGO: 'logo'
 }

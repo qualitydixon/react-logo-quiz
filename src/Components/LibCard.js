@@ -84,4 +84,9 @@ LibCard.propTypes = {
   logoGiven: PropTypes.string.isRequired
 }
 
+/*
+  "DropTarget uses partial application. After specifying its parameters with the first call,
+  you need to pass your React component class as the only parameter in the second call.
+  This signature makes DropTarget usable as an ES7 decorator"
+*/
 export default DropTarget(ItemTypes.LOGO, libCardTarget, collect)(LibCard)

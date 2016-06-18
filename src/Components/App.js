@@ -137,5 +137,8 @@ class App extends Component {
     )
   }
 }
-
+/*
+  "Wrap the root component of your application with DragDropContext to set up React DnD.
+  This lets you specify the backend, and sets up the shared DnD state behind the scenes."
+*/
 export default DragDropContext(HTML5Backend)(App)
