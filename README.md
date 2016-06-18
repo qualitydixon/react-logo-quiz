@@ -14,6 +14,7 @@
 - ~~Reset game state on Modal Close.~~
 - Allow users to replace dropped logo with different one.
 - Add comments.
+- Maybe convert css to inline styles
 
 ### Dependencies
 
