@@ -26,6 +26,10 @@ const Logos = {
   Flow: Flow
 }
 
+/*
+  "beginDrag(props, monitor, component): Required. When the dragging starts, beginDrag is called. You must return a plain JavaScript object describing the data being dragged.
+  What you return is the only information available to the drop targets about the drag source so it's important to pick the minimal data they need to know."
+*/
 const logoCardSource = {
   beginDrag (props) {
     return {
@@ -34,6 +38,13 @@ const logoCardSource = {
   }
 }
 
+/*
+  "React DnD exposes this state to your components via a few tiny wrappers over the internal state storage called the monitors.
+  The monitors let you update the props of your components in response to the drag and drop state changes."
+
+  "For each component that needs to track the drag and drop state, you can define a collecting function that retrieves the relevant bits of it from the monitors.
+  React DnD then takes care of timely calling your collecting function and merging its return value into your components' props."
+*/
 function collect (connect, monitor) {
   return {
     connectDragSource: connect.dragSource(),
@@ -65,6 +76,6 @@ LogoCard.propTypes = {
   connectDragSource: PropTypes.func.isRequired,
   isDragging: PropTypes.bool.isRequired,
   isDropped: PropTypes.bool.isRequired
-  }
+}
 
 export default DragSource(ItemTypes.LOGO, logoCardSource, collect)(LogoCard)

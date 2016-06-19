@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import { ItemTypes } from '../utils/Constants'
 import { DropTarget } from 'react-dnd'
-import { makePath } from '../utils/helpers'
 import ReactLogo from '../../res/logos/React.svg'
 import Babel from '../../res/logos/Babel.svg'
 import Flux from '../../res/logos/Flux.svg'
