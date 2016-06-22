@@ -5,27 +5,11 @@ import Navigation from './Navigation'
 import Modal from 'react-modal'
 import { DragDropContext } from 'react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
-import { Libs, Logos } from '../utils/Constants'
+import { Libs, Logos, modalStyle } from '../utils/Constants'
 import { libState, checkVictory, shareURL } from '../utils/helpers'
 import update from 'react/lib/update'
 import ReactLogo from '../../res/logos/React.svg'
 require('../../stylesheets/main.less')
-
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    padding: '10px',
-    width: 500,
-    margin: '0px auto',
-    height: 300,
-    borderRadius: 5,
-    transform: 'translate(-50%, -50%)'
-  }
-}
 
 class App extends Component {
   constructor (props) {
@@ -111,7 +95,7 @@ class App extends Component {
         </button>
         <Modal
           isOpen={this.state.modalOpen}
-          style={customStyles}
+          style={modalStyle}
           closeTimeoutMS={150}
           onRequestClose={() => this.closeModal()}
         >

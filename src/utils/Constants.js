@@ -28,5 +28,22 @@ const Names = [
   'Nuclide'
 ]
 */
-export const Libs = shuffle(shuffle(Names))
+
+export const modalStyle = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    padding: '10px',
+    width: 500,
+    margin: '0px auto',
+    height: 300,
+    borderRadius: 5,
+    transform: 'translate(-50%, -50%)'
+  }
+}
+
+export const Libs = shuffle(Names)
 export const Logos = shuffle(Names)
